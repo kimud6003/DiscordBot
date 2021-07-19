@@ -1,5 +1,8 @@
 # DISCORD AES,RSA BOT
 
+## 결과물
+
+<img src ="./READMEIMG/Result.png" style ="width : 50vw"> </img>
 ## ChatBot 코드 설명
 
 ```js
