@@ -36,6 +36,21 @@ client.on('message', msg => { //message를 받을때 체크
 client.login(process.env.Token);
 ```
 
+```js
+const exec = require('child_process').exec; //설정 필요
+
+    const 전달하고자하는 인자 = "hello"
+     exec(`./파일경로/파일명 ${전달하고자 하는 인자} `,
+      function callback(err,stdout,stderr){
+        if(err){
+          console.error(err); // 코드 에러 발생 
+        }else{
+            console.log("AUTH3 result : ");
+            console.log(stdout); // exe 파일의 결과값이 stdout으로 나옴 
+        }
+      })
+```
+
 ## AES 설명 
 - 고급 암호화 표준(Advanced Encryption Standard) AES 암호 알고리즘은 DES를 대체한 암호 대칭 키 알고리즘 알고리즘이다.
 - DES에 비해서 키 사이즈가 자유롭다. 가변 길이의 블록과 가변 길이의 키 사용이 가능하다.(128bit, 192bit, 256bit)
